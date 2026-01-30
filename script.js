@@ -1,12 +1,20 @@
 let arr=[]
 
-let task=document.getElementsByName("task-text");
-let lst = document.getElementsByClassName("list");
+// let task=document.getElementsByName("task-text");
+// let lst = document.getElementsByClassName("list");
+const add=document.querySelector(".add");
+let dlt=document.querySelector(".delete");
+let comp=document.querySelector(".complete")
 
-function add() {
-        arr.push(val);
-        console.log("Added");
-}
+let list=document.querySelector(".task-text");
+let tcount=document.querySelector(".task-count");
+let clr=document.querySelector(".Clear all");
+
+
+// function add() {
+//         arr.push(val);
+//         console.log("Added");
+// }
 function show() {
      for (const x of arr) {
         const item=document.createElement("li");
@@ -17,7 +25,9 @@ function show() {
             }
 }
 
-while (true) {
+/*while (true) {
+
+
     // let inp=Number(prompt("1:add\t2:pop\t3:show\t4:quite"))
     
 
@@ -56,4 +66,9 @@ while (true) {
         console.log("Invalid")
     }
     
-}
+}*/
+
+add.addEventListener("click",()=>{
+
+    console.log("btn target");
+});
