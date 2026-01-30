@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
+
+    <div class="main">
+        <header class="app-header">
+            <h1>To-Do</h1>
+            <p>Stay productive</p>
+        </header>
+
+        <section class="task-input">
+            <input type="text" name="add" id="add" placeholder="Enter Task">
+            <button>Add</button>
+        </section>
+
+        <section class="task-list">
+            <ul>
+                <li class="task">
+                    <span class="task-text">
+                        <div class="t-action">
+                            <button class="complete">Completed</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <span class="task-count">0 tasks remaining</span>
+            <button class="clear">Clear all</button>
+        </footer>
+    </div>
+    <!-- <script src="script.js"></script> -->
 </body>
+
 </html>

@@ -1,7 +1,24 @@
 let arr=[]
 
+let task=document.getElementsByName("task-text");
+let lst = document.getElementsByClassName("list");
+
+function add() {
+        arr.push(val);
+        console.log("Added");
+}
+function show() {
+     for (const x of arr) {
+        const item=document.createElement("li");
+        item.textContent=x       
+        console.log(x);
+        
+
+            }
+}
+
 while (true) {
-    let inp=Number(prompt("1:add\t2:pop\t3:show\t4:quite"))
+    // let inp=Number(prompt("1:add\t2:pop\t3:show\t4:quite"))
     
 
     if (inp==1) {
